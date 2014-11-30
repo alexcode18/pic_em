@@ -1,0 +1,25 @@
+<% @author.errors.full_messages.each do |msg| %>
+	<li><%= msg %></li>
+<% end %>
+
+<%= form_for @author do |f| %>
+	<%= f.label :username %><br>
+	<%= f.text_field :username %><br>
+
+	<%= f.label :password %><br>
+	<%= f.password_field :password %><br>
+
+	<%= f.label :password_confirmation %><br>
+	<%= f.password_field :password_confirmation %><br>
+
+	<%= f.label :img_url %><br>
+	<%= f.text_field :img_url %><br>
+
+	<%= f.label :bio %><br>
+	<%= f.text_field :bio %><br>
+
+	<%= f.label :location %><br>
+	<%= f.text_field :location %><br>
+
+	<%= f.submit %>
+<% end %>

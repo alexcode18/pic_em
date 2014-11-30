@@ -1,0 +1,169 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
+
+body {
+	font-family: Arial, sans-serif;
+	letter-spacing: 2px;
+	background-image: url(http://st.depositphotos.com/1172692/1394/v/110/depositphotos_13945307-Grey-polka-dots-on-white-background-retro-seamless-vector-pattern-or-texture.jpg);
+}
+
+header {
+	background: #2289E3;
+	height: 20px;
+	padding: 20px;
+	box-shadow: 0px 2px 6px grey;
+	line-height:15px;
+}
+
+header a {
+	text-decoration: none;
+	color: white;
+}
+
+li {
+	display: inline;
+	color: white;
+	padding: 5px 10px;
+	margin: 0 5px;
+	cursor: pointer;
+	border-radius: 10px;
+	box-shadow: 0px 0px 6px #044691;
+}
+
+li:hover {
+	box-shadow: 0px 0px 3px #044691;
+}
+
+h1 {
+	font-family: 'Permanent Marker';
+	float: left;
+	margin-right: 30px;
+	color: white;
+	font-size: 27px;
+	margin-top: -5px;
+}
+
+h4 {
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	padding:20px;
+}
+
+#container,
+#columns {
+	padding:10px;
+	margin: 0 auto;
+}
+
+#columns {
+	column-width: 250px;
+	-webkit-column-width: 250px;
+	-moz-column-width: 250px;
+	-o-column-width: 250px;
+	-ms-column-width: 250px;
+	column-gap: 5px;
+	-webkit-column-max-gap: 5px;
+	-moz-column-gap: 5px;
+	-o-column-gap: 5px;
+	-ms-column-gap: 5px;
+	width: 90%;
+}
+/*
+div#columns:hover div:not(:hover) { border: 2px solid grey; }*/
+
+.post_box,
+.large_post_box,
+.author_post_box {
+	background: white;
+	box-shadow: 0px 2px 6px grey;
+	-ms-column-break-inside: avoid;
+	-moz-column-break-inside: avoid;
+	-webkit-column-break-inside: avoid;
+	-o-column-break-inside: avoid;
+	column-break-inside: avoid;
+	display: inline-block;
+}
+
+.large_post_box,
+.author_post_box {
+	float: left;
+	margin: 8px;
+}
+
+.post_box,
+.author_post_box {
+	width: 250px;
+	max-width: 250px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.author_bkgd {
+	background: lightgrey;
+}
+
+.large_post_box {
+	width: 600px;
+	margin-left: 10%;
+}
+
+p {
+	font-family: Georgia, serif;
+}
+
+.post_box p {
+	padding: 5px;
+}
+
+.large_post_box p{
+	padding:0px 20px 20px;
+}
+
+.thumbnail {
+	width: 250px;
+}
+
+.thumbnail:hover {
+	opacity: .8;
+}
+
+.big_image {
+	max-width: 600px;
+}
+
+.author_pic {
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	border-radius: 75px;
+	-moz-border-radius: 75px;
+	-webkit-border-radius: 75px;
+	border: 0;
+
+}
+
+#container link{
+	color: #2289E3;
+}
+
+.post_stat {
+	font-size: 10pt;
+	border-top: 1px solid lightgrey;
+	padding-top: 10px;
+}

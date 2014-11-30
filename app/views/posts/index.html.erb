@@ -1,0 +1,11 @@
+<div id="columns">
+	<% @posts.each do |post| %>
+		
+		<div class="post_box">
+			<a href="/posts/<%= post.id %>"><img class="thumbnail" src="<%= post.img_url %>"></a>
+			<h4><%= post.title %></h4>
+			<p class="post_stat"><%= post.author.username %> - <%= post.add_date %> | <a href="/posts/<%= post.id %>/edit">Edit</a></p>
+		</div>
+
+	<% end %>
+</div>

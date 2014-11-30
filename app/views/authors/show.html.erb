@@ -1,0 +1,16 @@
+<div class="post_box author_bkgd">
+	<p><%= @author.username%></p>
+	<img class="thumbnail" src="<%= @author.img_url%>">
+	<p class="post_stat"><%= @author.bio %><br><%=@author.location%> | <a href="/authors/<%=@author.id%>/edit">Edit</a>
+	</p>
+</div>
+
+<% @author.posts.each do |post| %>
+	
+	<div class="post_box">
+		<a href="/posts/<%= post.id %>"><img class="thumbnail" src="<%= post.img_url%>"></a>
+	<p><%= @author.username%></p>
+	<p class="post_stat"><%= @author.bio %><br><%=@author.location%> | <a href="/posts/<%=post.id%>/edit">Edit</a></p>
+	</div>
+
+<% end %>

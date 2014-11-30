@@ -1,0 +1,21 @@
+<div class="large_post_box">
+	<img class="big_image" src="<%= @post.img_url%>">
+	<h4><%= @post.title%></h4>
+	<p><%= @post.words%></p>
+	<p class="post_stat"><%= @post.author.username %> - <%= @post.created_at%> | <a href="/posts/<%= @post.id %>/edit">Edit</a></p>
+	<p class="post_stat">Tags: <br>
+		<% @post.tags.each do |tag|%>
+			<a href="/tags/<%=tag.id%>"><%=tag.name%></a> 
+		<%end%> | 
+		<form action="/posts/<%= @post.id%>" method="post">
+			<input type="hidden" name="_method" value="DELETE">
+			<button>Remove</button>
+		</form>
+	</p>
+</div>
+
+<div class="author_post_box author_bkgd">
+	<a href="/authors/<%=@post.author.id%>"><img class="author_pic" src="<%= @post.author.img_url%>">
+	<p><%= @post.author.username%></p></a>
+	<p class="post_stat"><%= @post.author.bio %><br><%= @post.author.location%> | <a href="/authors/<%=@post.author.id%>/edit">Edit</a></p>
+</div>

@@ -1,0 +1,9 @@
+<div class="large_post_box">
+	<h3>Edit your Account</h3>
+	<%= render "form" %>
+
+	<form action="/authors/<%= @author.id%>" method="post">
+		<input type="hidden" name="_method" value="DELETE">
+		<button>Remove</button>
+	</form>
+</div>

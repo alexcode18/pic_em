@@ -1,0 +1,21 @@
+<%= form_for post do |f| %>
+		<%= f.label :title %>
+		<%= f.text_field :title %>
+
+		<%= f.label :words %>
+		<%= f.text_field :words %>
+
+		<%= f.label :img_url %>
+		<%= f.text_field :img_url %>
+
+		<br><label for="tags">Tags:<br/>
+			<% Tag.all.map do |tag|%>
+				<input type="checkbox" name="tags[]" value="<%= tag.id %>">
+					<%= tag.name %>
+				<br/>
+			<%end%>
+		</label><br>
+
+		<%= f.submit %>
+
+	<% end %>

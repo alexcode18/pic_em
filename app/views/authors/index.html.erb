@@ -1,0 +1,12 @@
+<% @authors.each do |author| %>
+	
+	<div class="post_box author_bkgd">
+		<p><%= author.username %></p>
+		<a href="/authors/<%= author.id %>"><img class="thumbnail" src="<%= author.img_url%>"></a>
+	<p class="post_stat"><%= author.bio %><br><%=author.location%> | 
+		<% if author.id == session[:current_user_id] %>
+			<a href="/authors/<%=author.id%>/edit">Edit</a></p>
+		<% end %>
+	</div>
+
+<% end %>

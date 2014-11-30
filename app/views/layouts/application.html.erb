@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RailsMicroblog</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<header>	
+		<nav>
+			<h1><a href="/">Pic Em'</a></h1>
+			<ul>
+				<li><a href="/posts">posts</li>
+				<li><a href="/tags">tags</li>
+				<li><a href="/authors">authors</li>
+				<% if session[:current_user_id] %>
+				  <li><%= link_to "Welcome, #{Author.find(session[:current_user_id]).username}", authors_path(session[:current_user_id]) %></li>
+				  <li>
+				  	<%= link_to "Log Out", sessions_path, method: :delete %>
+				  </li>
+				<% else %>
+				  <%= link_to "Sign Up", new_author_path %> |
+				  <%= link_to "Log In", login_path %>
+				<% end %>
+			</ul>
+		</nav>
+	</header>
+	<div id="container">
+		<%= yield%>
+	</div>
+</body>
+</html>

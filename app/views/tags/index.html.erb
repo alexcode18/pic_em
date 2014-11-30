@@ -1,0 +1,27 @@
+<div id="columns">
+	<div class="post_box">
+		<h3>Create a new Tag</h3>
+		<%= form_for  @tag do |f| %>
+			<%= f.label :name %>
+			<%= f.text_field :name %>
+
+			<%= f.submit %>
+		<% end %>
+	</div>
+
+	<% @tags.each do |tag| %>
+		
+		<div class="post_box">
+			<a href="/tags/<%= tag.id %>">
+				
+			<% @map = tag.posts.map do |post| %>
+				<% post.img_url %>
+			<% end %>
+			<% if @map == true %>
+				<img class="thumbnail" src="<%= @map.sample.img_url %>">
+			<% end %>
+				<h4><%= tag.name %></h4>
+			</a>
+		</div>
+	<% end %>
+</div>
