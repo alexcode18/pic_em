@@ -4,10 +4,12 @@ class PostsController < ApplicationController
 
 	def index
 		@posts = Post.all
+		@tags = Tag.all
 	end
 
 	def show
 		@post = Post.find(params[:id])
+		@tags = Tag.all
 	end
 
 	def new
@@ -33,18 +35,19 @@ class PostsController < ApplicationController
 
 	def edit
 		@post = Post.find(params[:id])
-		@authors = Author.all
+		@tags = Tag.all
 	end
 
 	def update
 		updatedpost = Post.find(params[:id])
 		tags = Tag.find(params[:tags])
-		updatedpost.author_id = session[:current_user_id]
-		if updatedpost.valid?
-			tags.each {|tag| updatedpost.tags << tag }
-			redirect_to posts_path(updatedpost.id)
+		updatedpost.tags = []
+		tags.each {|tag| updatedpost.tags << tag }
+		
+		if updatedpost.update(post_params)
+			redirect_to posts_path
 		else
-			render :edit
+			render edit_post_path
 		end
 	end
 

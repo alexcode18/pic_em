@@ -5,6 +5,11 @@
 			<a href="/posts/<%= post.id %>"><img class="thumbnail" src="<%= post.img_url %>"></a>
 			<h4><%= post.title %></h4>
 			<p class="post_stat"><%= post.author.username %> - <%= post.add_date %> | <a href="/posts/<%= post.id %>/edit">Edit</a></p>
+			<p>
+				<% post.tags.each do |tag| %>
+					<%= tag.name %>
+				<% end %>
+			</p>
 		</div>
 
 	<% end %>

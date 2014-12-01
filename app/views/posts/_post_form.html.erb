@@ -1,21 +1,28 @@
-<%= form_for post do |f| %>
-		<%= f.label :title %>
-		<%= f.text_field :title %>
+<%= form_for @post do |f| %>
+		
+	<%= f.label :title %><br>
+	<%= f.text_field :title %><br>
 
-		<%= f.label :words %>
-		<%= f.text_field :words %>
+	<%= f.label :words %><br>
+	<%= f.text_field :words %><br>
 
-		<%= f.label :img_url %>
-		<%= f.text_field :img_url %>
+	<%= f.label :img_url %><br>
+	<%= f.text_field :img_url %><br>
 
-		<br><label for="tags">Tags:<br/>
-			<% Tag.all.map do |tag|%>
-				<input type="checkbox" name="tags[]" value="<%= tag.id %>">
+	<br>
+		<label for="tags">Tags:<br/>
+			<% @tags.each do |tag|%>
+				<input  type="checkbox" name="tags[]" value="<%= tag.id %>" <% @post.tags.each do |tag2|%>
+					<% if tag.name == tag2.name %>
+						checked
+					<% end %>
+				<% end %>>
 					<%= tag.name %>
 				<br/>
-			<%end%>
-		</label><br>
+			<% end %>
+		</label>
+	<br>
 
-		<%= f.submit %>
+	<%= f.submit %>
 
-	<% end %>
+<% end %>
