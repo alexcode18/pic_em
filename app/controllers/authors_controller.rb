@@ -1,6 +1,6 @@
 class AuthorsController < ApplicationController
 
-		# before_action :logged_in_user, only: [:edit, :update]
+	before_action :authenticate, only: [:edit, :update]
 	#Index
 	def index
 		@authors = Author.all
@@ -26,6 +26,11 @@ class AuthorsController < ApplicationController
 
 	def edit
 		@author = Author.find(params[:id])
+
+		if @author == current_author
+		else
+			redirect_to login_path
+		end
 	end
 
 	def update
@@ -48,13 +53,6 @@ class AuthorsController < ApplicationController
 	def author_params
 		params.require(:author).permit(:username, :img_url, :bio, :location, :password, :password_confirmation)
 	end
-
-	def logged_in_user
-		unless logged_in?
-			flash[:danger] = "Please log in."
-			redirect_to login_path
-    end
-  end
 
 end
 

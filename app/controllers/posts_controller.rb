@@ -36,6 +36,11 @@ class PostsController < ApplicationController
 	def edit
 		@post = Post.find(params[:id])
 		@tags = Tag.all
+
+		if @post.author_id == current_author.id
+		else
+			redirect_to author_path
+		end
 	end
 
 	def update

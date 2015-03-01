@@ -1,5 +1,7 @@
 class TagsController < ApplicationController
 
+	before_action :authenticate
+
 	def index
 		@tags = Tag.all
 		@posts = Post.all

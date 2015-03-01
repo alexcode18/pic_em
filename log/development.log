@@ -24221,3 +24221,1656 @@ Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 21:28:06 
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 21:28:06 -0500
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-11-30 22:01:34 -0500
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mTag Load (0.5ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[35mAuthor Load (0.1ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mAuthor Load (0.3ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 3]]
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 4]]
+  Rendered posts/index.html.erb within layouts/application (10.9ms)
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 4]]
+Completed 200 OK in 78ms (Views: 73.1ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-11-30 22:11:39 -0500
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[35mAuthor Load (0.5ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 3]]
+  [1m[35mAuthor Load (0.3ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 4]]
+  Rendered posts/index.html.erb within layouts/application (59.1ms)
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 4]]
+Completed 200 OK in 135ms (Views: 118.3ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-11-30 22:11:40 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 22:11:40 -0500
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-30 22:11:40 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 22:11:40 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 22:11:40 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 22:11:40 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 22:11:40 -0500
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2014-11-30 22:11:45 -0500
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (0.6ms)[0m  SELECT "tags".* FROM "tags"
+  [1m[36mTag Load (0.6ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/_post_form.html.erb (5.9ms)
+  Rendered posts/edit.html.erb within layouts/application (6.5ms)
+  [1m[35mAuthor Load (0.7ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 4]]
+Completed 200 OK in 46ms (Views: 42.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-11-30 22:14:10 -0500
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mAuthor Load (0.3ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 3]]
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 4]]
+  Rendered posts/index.html.erb within layouts/application (9.1ms)
+  [1m[35mAuthor Load (0.5ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 4]]
+Completed 200 OK in 46ms (Views: 42.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-11-30 22:14:20 -0500
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mAuthor Load (0.3ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mAuthor Load (0.3ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 3]]
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 4]]
+  Rendered posts/index.html.erb within layouts/application (32.2ms)
+  [1m[35mAuthor Load (0.5ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 4]]
+Completed 200 OK in 77ms (Views: 57.8ms | ActiveRecord: 11.2ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-11-30 22:14:20 -0500
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-30 22:14:20 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 22:14:20 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 22:14:20 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 22:14:20 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 22:14:20 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 22:14:20 -0500
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-11-30 22:17:44 -0500
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mAuthor Load (0.3ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[35mAuthor Load (0.3ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 3]]
+  [1m[35mAuthor Load (0.1ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 4]]
+  Rendered posts/index.html.erb within layouts/application (29.4ms)
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 4]]
+Completed 200 OK in 79ms (Views: 62.7ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-11-30 22:17:44 -0500
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-30 22:17:44 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 22:17:44 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 22:17:44 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 22:17:44 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 22:17:44 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 22:17:44 -0500
+
+
+Started GET "/tags" for 127.0.0.1 at 2014-11-30 22:17:47 -0500
+Processing by TagsController#index as HTML
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT "tags".* FROM "tags"[0m
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1  [["tag_id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1[0m  [["tag_id", 2]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1  [["tag_id", 3]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1[0m  [["tag_id", 4]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1  [["tag_id", 5]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1[0m  [["tag_id", 6]]
+  Rendered tags/index.html.erb within layouts/application (10.9ms)
+  [1m[35mAuthor Load (0.5ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 4]]
+Completed 200 OK in 48ms (Views: 45.0ms | ActiveRecord: 2.5ms)
+
+
+Started DELETE "/sessions" for 127.0.0.1 at 2014-11-30 22:17:49 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"20F/jqR3Ftrgi2qzkie2CqN7SisZgB9diXzS9WeDjZ4="}
+Redirected to http://localhost:3000/authors
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2014-11-30 22:17:49 -0500
+Processing by AuthorsController#index as HTML
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT "authors".* FROM "authors"[0m
+  Rendered authors/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 53ms (Views: 51.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-11-30 22:17:50 -0500
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-30 22:17:50 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 22:17:50 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 22:17:50 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 22:17:50 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 22:17:50 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 22:17:50 -0500
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-11-30 22:17:51 -0500
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (0.3ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1  [["post_id", 1]]
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mTag Load (0.4ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1  [["post_id", 2]]
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mTag Load (0.3ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1  [["post_id", 3]]
+  [1m[36mAuthor Load (0.3ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mTag Load (0.2ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1  [["post_id", 4]]
+  Rendered posts/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 44ms (Views: 41.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2014-11-30 22:17:53 -0500
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (0.4ms)[0m  SELECT "tags".* FROM "tags"
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/_post_form.html.erb (4.8ms)
+  Rendered posts/edit.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 45ms (Views: 41.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 22:17:56 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 69ms (Views: 68.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tags" for 127.0.0.1 at 2014-11-30 22:18:01 -0500
+Processing by TagsController#index as HTML
+  [1m[35mTag Load (0.4ms)[0m  SELECT "tags".* FROM "tags"
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1[0m  [["tag_id", 1]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1  [["tag_id", 2]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1[0m  [["tag_id", 3]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1  [["tag_id", 4]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1[0m  [["tag_id", 5]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1  [["tag_id", 6]]
+  Rendered tags/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 46ms (Views: 42.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/tags" for 127.0.0.1 at 2014-11-30 22:18:04 -0500
+Processing by TagsController#index as HTML
+  [1m[36mTag Load (0.5ms)[0m  [1mSELECT "tags".* FROM "tags"[0m
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1  [["tag_id", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1[0m  [["tag_id", 2]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1  [["tag_id", 3]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1[0m  [["tag_id", 4]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1  [["tag_id", 5]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1[0m  [["tag_id", 6]]
+  Rendered tags/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 54ms (Views: 50.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-11-30 22:18:05 -0500
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mAuthor Load (0.3ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (0.3ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1  [["post_id", 1]]
+  [1m[36mAuthor Load (0.3ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mTag Load (0.4ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1  [["post_id", 2]]
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mTag Load (0.4ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1  [["post_id", 3]]
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mTag Load (0.3ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1  [["post_id", 4]]
+  Rendered posts/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 45ms (Views: 41.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2014-11-30 22:18:06 -0500
+Processing by AuthorsController#index as HTML
+  [1m[36mAuthor Load (0.6ms)[0m  [1mSELECT "authors".* FROM "authors"[0m
+  Rendered authors/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 38ms (Views: 36.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tags" for 127.0.0.1 at 2014-11-30 22:18:07 -0500
+Processing by TagsController#index as HTML
+  [1m[35mTag Load (0.5ms)[0m  SELECT "tags".* FROM "tags"
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1[0m  [["tag_id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1  [["tag_id", 2]]
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1[0m  [["tag_id", 3]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1  [["tag_id", 4]]
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1[0m  [["tag_id", 5]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1  [["tag_id", 6]]
+  Rendered tags/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 45ms (Views: 41.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/tags" for 127.0.0.1 at 2014-11-30 22:41:40 -0500
+Processing by TagsController#index as HTML
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT "tags".* FROM "tags"[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1  [["tag_id", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1[0m  [["tag_id", 2]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1  [["tag_id", 3]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1[0m  [["tag_id", 4]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1  [["tag_id", 5]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1[0m  [["tag_id", 6]]
+  Rendered tags/index.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 105ms (Views: 91.1ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-11-30 22:41:40 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 22:41:40 -0500
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-30 22:41:40 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 22:41:40 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 22:41:40 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 22:41:40 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 22:41:40 -0500
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-11-30 22:41:42 -0500
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (0.3ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1  [["post_id", 1]]
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mTag Load (0.6ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1  [["post_id", 2]]
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mTag Load (0.2ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1  [["post_id", 3]]
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mTag Load (0.3ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1  [["post_id", 4]]
+  Rendered posts/index.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 56ms (Views: 50.3ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2014-11-30 22:42:07 -0500
+Processing by AuthorsController#index as HTML
+  [1m[36mAuthor Load (0.7ms)[0m  [1mSELECT "authors".* FROM "authors"[0m
+  Rendered authors/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 35ms (Views: 33.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/authors/1" for 127.0.0.1 at 2014-11-30 22:42:10 -0500
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.8ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."author_id" = $1[0m  [["author_id", 1]]
+  Rendered authors/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 84ms (Views: 81.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/authors/1/edit" for 127.0.0.1 at 2014-11-30 22:42:13 -0500
+Processing by AuthorsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAuthor Load (0.3ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `current_author?' for #<Author:0x007fc77dfe6130>):
+  app/controllers/authors_controller.rb:30:in `edit'
+
+
+  Rendered /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.5ms)
+
+
+Started GET "/authors/1/edit" for 127.0.0.1 at 2014-11-30 22:42:13 -0500
+Processing by AuthorsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `current_author?' for #<Author:0x007fc779248400>):
+  app/controllers/authors_controller.rb:30:in `edit'
+
+
+  Rendered /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.9ms)
+
+
+Started GET "/authors/1/edit" for 127.0.0.1 at 2014-11-30 22:43:34 -0500
+Processing by AuthorsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Completed 302 Found in 11ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-11-30 22:43:34 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 77ms (Views: 76.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-11-30 22:43:34 -0500
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-30 22:43:34 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 22:43:34 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 22:43:34 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 22:43:34 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 22:43:34 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 22:43:34 -0500
+
+
+Started GET "/authors" for 127.0.0.1 at 2014-11-30 22:43:39 -0500
+Processing by AuthorsController#index as HTML
+  [1m[35mAuthor Load (0.5ms)[0m  SELECT "authors".* FROM "authors"
+  Rendered authors/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 37ms (Views: 36.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/authors/4" for 127.0.0.1 at 2014-11-30 22:43:41 -0500
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  WHERE "posts"."author_id" = $1  [["author_id", 4]]
+  Rendered authors/show.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 48ms (Views: 44.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/authors/4/edit" for 127.0.0.1 at 2014-11-30 22:43:43 -0500
+Processing by AuthorsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAuthor Load (0.5ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mAuthor Load (0.3ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" IS NULL LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Completed 302 Found in 3ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-11-30 22:43:43 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 37ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-11-30 22:43:48 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 36ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-11-30 22:43:55 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"20F/jqR3Ftrgi2qzkie2CqN7SisZgB9diXzS9WeDjZ4=", "username"=>"CoolDog", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mAuthor Load (0.6ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."username" = 'CoolDog' LIMIT 1[0m
+Redirected to http://localhost:3000/authors
+Completed 302 Found in 82ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2014-11-30 22:43:55 -0500
+Processing by AuthorsController#index as HTML
+  [1m[35mAuthor Load (0.3ms)[0m  SELECT "authors".* FROM "authors"
+  Rendered authors/index.html.erb within layouts/application (1.0ms)
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 48ms (Views: 47.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-11-30 22:43:55 -0500
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-30 22:43:55 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 22:43:55 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 22:43:55 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 22:43:55 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 22:43:55 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 22:43:55 -0500
+
+
+Started GET "/authors/4" for 127.0.0.1 at 2014-11-30 22:43:58 -0500
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mAuthor Load (0.3ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."author_id" = $1[0m  [["author_id", 4]]
+  Rendered authors/show.html.erb within layouts/application (1.3ms)
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 4]]
+Completed 200 OK in 39ms (Views: 36.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/authors/4/edit" for 127.0.0.1 at 2014-11-30 22:43:59 -0500
+Processing by AuthorsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mAuthor Load (0.3ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1
+  Rendered authors/_form.html.erb (7.0ms)
+  Rendered authors/edit.html.erb within layouts/application (44.6ms)
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 85ms (Views: 82.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/authors/4/edit" for 127.0.0.1 at 2014-11-30 22:47:03 -0500
+Processing by AuthorsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mAuthor Load (0.5ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1[0m
+  Rendered authors/_form.html.erb (4.0ms)
+  Rendered authors/edit.html.erb within layouts/application (5.0ms)
+  [1m[35mAuthor Load (0.5ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 4]]
+Completed 200 OK in 52ms (Views: 41.2ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-30 22:47:03 -0500
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-11-30 22:47:03 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 22:47:03 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 22:47:03 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 22:47:03 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 22:47:03 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 22:47:03 -0500
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-11-30 22:47:05 -0500
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 3]]
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 4]]
+  Rendered posts/index.html.erb within layouts/application (21.5ms)
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 4]]
+Completed 200 OK in 71ms (Views: 53.3ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2014-11-30 22:47:10 -0500
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mAuthor Load (0.3ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT "tags".* FROM "tags"[0m
+Completed 500 Internal Server Error in 6ms
+
+NameError (undefined local variable or method `show_author_path' for #<PostsController:0x007fc77bf6f2d0>):
+  app/controllers/posts_controller.rb:42:in `edit'
+
+
+  Rendered /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.4ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2014-11-30 22:47:10 -0500
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mAuthor Load (0.3ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1[0m
+  [1m[35mTag Load (0.5ms)[0m  SELECT "tags".* FROM "tags"
+Completed 500 Internal Server Error in 7ms
+
+NameError (undefined local variable or method `show_author_path' for #<PostsController:0x007fc77b9ffbd8>):
+  app/controllers/posts_controller.rb:42:in `edit'
+
+
+  Rendered /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.9ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2014-11-30 22:47:18 -0500
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mAuthor Load (0.3ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1
+  [1m[36mTag Load (0.5ms)[0m  [1mSELECT "tags".* FROM "tags"[0m
+Completed 500 Internal Server Error in 31ms
+
+NameError (undefined local variable or method `show_author_path' for #<PostsController:0x007fc77ec92000>):
+  app/controllers/posts_controller.rb:42:in `edit'
+
+
+  Rendered /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.8ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2014-11-30 22:47:43 -0500
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1
+Completed 500 Internal Server Error in 24ms
+
+TypeError (no implicit conversion of Author into Integer):
+  app/controllers/posts_controller.rb:42:in `[]'
+  app/controllers/posts_controller.rb:42:in `edit'
+
+
+  Rendered /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2014-11-30 22:47:52 -0500
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1[0m
+Redirected to http://localhost:3000h
+Completed 302 Found in 23ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2014-11-30 22:47:52 -0500
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mAuthor Load (0.3ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1
+Redirected to http://localhost:3000h
+Completed 302 Found in 3ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2014-11-30 22:47:52 -0500
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mAuthor Load (0.3ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1[0m
+Redirected to http://localhost:3000h
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2014-11-30 22:47:52 -0500
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mAuthor Load (0.3ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1
+Redirected to http://localhost:3000h
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2014-11-30 22:47:52 -0500
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mAuthor Load (0.3ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1[0m
+Redirected to http://localhost:3000h
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2014-11-30 22:47:52 -0500
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mAuthor Load (0.3ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1
+Redirected to http://localhost:3000h
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2014-11-30 22:47:52 -0500
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mAuthor Load (0.3ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1[0m
+Redirected to http://localhost:3000h
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2014-11-30 22:47:55 -0500
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mAuthor Load (0.3ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1
+Redirected to http://localhost:3000h
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2014-11-30 22:48:00 -0500
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mAuthor Load (0.5ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1[0m
+Redirected to http://localhost:3000h
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2014-11-30 22:48:30 -0500
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mAuthor Load (0.5ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1
+Redirected to http://localhost:3000h
+Completed 302 Found in 3ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2014-11-30 22:49:30 -0500
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1[0m
+Redirected to http://localhost:3000h
+Completed 302 Found in 4ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2014-11-30 22:49:45 -0500
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1[0m
+Redirected to http://localhost:3000/authors/1
+Completed 302 Found in 22ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/authors/1" for 127.0.0.1 at 2014-11-30 22:49:45 -0500
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."author_id" = $1[0m  [["author_id", 1]]
+  Rendered authors/show.html.erb within layouts/application (3.2ms)
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 4]]
+Completed 200 OK in 44ms (Views: 42.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-11-30 22:49:45 -0500
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-30 22:49:45 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 22:49:45 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 22:49:45 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 22:49:45 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 22:49:45 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 22:49:45 -0500
+
+
+Started GET "/authors/1/edit" for 127.0.0.1 at 2014-11-30 22:49:52 -0500
+Processing by AuthorsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mAuthor Load (0.3ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-11-30 22:49:52 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 39ms (Views: 37.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-11-30 22:50:16 -0500
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (0.4ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1  [["post_id", 1]]
+  [1m[36mAuthor Load (0.3ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mTag Load (0.1ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1  [["post_id", 2]]
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mTag Load (0.3ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1  [["post_id", 3]]
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mTag Load (0.2ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1  [["post_id", 4]]
+  Rendered posts/index.html.erb within layouts/application (15.4ms)
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 66ms (Views: 60.1ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2014-11-30 22:50:18 -0500
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mAuthor Load (0.3ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1[0m
+Redirected to http://localhost:3000/authors/2
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/authors/2" for 127.0.0.1 at 2014-11-30 22:50:18 -0500
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."author_id" = $1[0m  [["author_id", 2]]
+  Rendered authors/show.html.erb within layouts/application (1.7ms)
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 4]]
+Completed 200 OK in 43ms (Views: 40.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/authors/2/edit" for 127.0.0.1 at 2014-11-30 22:50:22 -0500
+Processing by AuthorsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mAuthor Load (0.5ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-11-30 22:50:22 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+  [1m[36mAuthor Load (0.5ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 39ms (Views: 37.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2014-12-01 09:13:09 -0500
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mAuthor Load (0.3ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1[0m
+Redirected to http://localhost:3000/authors/2
+Completed 302 Found in 25ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/authors/2" for 127.0.0.1 at 2014-12-01 09:13:09 -0500
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAuthor Load (0.3ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."author_id" = $1[0m  [["author_id", 2]]
+  Rendered authors/show.html.erb within layouts/application (12.5ms)
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 4]]
+Completed 200 OK in 85ms (Views: 82.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 09:13:42 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+  [1m[36mAuthor Load (0.5ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 37ms (Views: 35.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-12-01 09:13:54 -0500
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (0.4ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1  [["post_id", 1]]
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mTag Load (0.4ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1  [["post_id", 2]]
+  [1m[36mAuthor Load (0.1ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mTag Load (0.2ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1  [["post_id", 3]]
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mTag Load (0.3ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1  [["post_id", 4]]
+  Rendered posts/index.html.erb within layouts/application (15.4ms)
+  [1m[36mAuthor Load (0.7ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 53ms (Views: 46.1ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/posts1/edit" for 127.0.0.1 at 2014-12-01 09:41:42 -0500
+
+ActionController::RoutingError (No route matches [GET] "/posts1/edit"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
+  Rendered /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (54.1ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2014-12-01 09:41:48 -0500
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mAuthor Load (0.3ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1[0m
+Redirected to http://localhost:3000/authors/1
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/authors/1" for 127.0.0.1 at 2014-12-01 09:41:48 -0500
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAuthor Load (0.3ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."author_id" = $1[0m  [["author_id", 1]]
+  Rendered authors/show.html.erb within layouts/application (3.4ms)
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 4]]
+Completed 200 OK in 168ms (Views: 165.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-12-01 09:41:48 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 09:41:48 -0500
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 09:41:48 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 09:41:48 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 09:41:48 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 09:41:48 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 09:41:48 -0500
+
+
+Started GET "/authors/1/edit" for 127.0.0.1 at 2014-12-01 09:41:55 -0500
+Processing by AuthorsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAuthor Load (0.3ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mAuthor Load (0.3ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-12-01 09:41:55 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 56ms (Views: 54.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-12-01 09:41:55 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 09:41:55 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 09:41:55 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-01 09:41:55 -0500
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-12-01 09:41:55 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 09:41:55 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 09:41:55 -0500
+
+
+Started GET "/authors.4" for 127.0.0.1 at 2014-12-01 09:43:55 -0500
+Processing by AuthorsController#index as 
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT "authors".* FROM "authors"
+  Rendered authors/index.html.erb within layouts/application (2.2ms)
+  [1m[36mAuthor Load (0.5ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 54ms (Views: 52.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/authors/3" for 127.0.0.1 at 2014-12-01 09:44:04 -0500
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mAuthor Load (0.3ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."author_id" = $1[0m  [["author_id", 3]]
+  Rendered authors/show.html.erb within layouts/application (1.2ms)
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 4]]
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/3/edit" for 127.0.0.1 at 2014-12-01 09:44:07 -0500
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mAuthor Load (0.3ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1
+Redirected to http://localhost:3000/authors/3
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/authors/3" for 127.0.0.1 at 2014-12-01 09:44:07 -0500
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts"  WHERE "posts"."author_id" = $1  [["author_id", 3]]
+  Rendered authors/show.html.erb within layouts/application (1.4ms)
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 38ms (Views: 35.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/3/edit" for 127.0.0.1 at 2014-12-01 09:44:10 -0500
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 4 LIMIT 1[0m
+Redirected to http://localhost:3000/authors/3
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/authors/3" for 127.0.0.1 at 2014-12-01 09:44:10 -0500
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mAuthor Load (0.3ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."author_id" = $1[0m  [["author_id", 3]]
+  Rendered authors/show.html.erb within layouts/application (1.3ms)
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 4]]
+Completed 200 OK in 41ms (Views: 38.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 09:44:17 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-12-01 09:44:22 -0500
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mAuthor Load (0.3ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (0.4ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1  [["post_id", 1]]
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mTag Load (0.3ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1  [["post_id", 2]]
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mTag Load (0.3ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1  [["post_id", 3]]
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mTag Load (0.3ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1  [["post_id", 4]]
+  Rendered posts/index.html.erb within layouts/application (8.8ms)
+  [1m[36mAuthor Load (0.3ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 83ms (Views: 79.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2014-12-01 09:45:21 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mAuthor Load (0.6ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (0.7ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (4.7ms)
+  [1m[36mAuthor Load (0.7ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 84ms (Views: 80.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2014-12-01 09:45:39 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mTag Load (0.5ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1  [["post_id", 3]]
+  Rendered posts/show.html.erb within layouts/application (3.2ms)
+  [1m[36mAuthor Load (0.3ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 42ms (Views: 39.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2014-12-01 09:45:44 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mTag Load (0.2ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1  [["post_id", 2]]
+  Rendered posts/show.html.erb within layouts/application (2.3ms)
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 40ms (Views: 37.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2014-12-01 09:45:47 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mAuthor Load (0.3ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mTag Load (0.4ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1  [["post_id", 4]]
+  Rendered posts/show.html.erb within layouts/application (2.5ms)
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 40ms (Views: 37.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 09:46:28 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 4]]
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tags" for 127.0.0.1 at 2014-12-01 12:48:22 -0500
+Processing by TagsController#index as HTML
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT "tags".* FROM "tags"[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1  [["tag_id", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1[0m  [["tag_id", 2]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1  [["tag_id", 3]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1[0m  [["tag_id", 4]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1  [["tag_id", 5]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1[0m  [["tag_id", 6]]
+  Rendered tags/index.html.erb within layouts/application (19.4ms)
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 4]]
+Completed 200 OK in 111ms (Views: 108.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/tags/3" for 127.0.0.1 at 2014-12-01 12:48:24 -0500
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTag Load (0.6ms)[0m  [1mSELECT  "tags".* FROM "tags"  WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" INNER JOIN "posts_tags" ON "posts"."id" = "posts_tags"."post_id" WHERE "posts_tags"."tag_id" = $1  [["tag_id", 3]]
+  [1m[36mAuthor Load (0.3ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mAuthor Load (0.3ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mAuthor Load (0.3ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered tags/show.html.erb within layouts/application (4.7ms)
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 4]]
+Completed 200 OK in 56ms (Views: 52.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-01 17:07:37 -0500
+
+ActiveRecord::NoDatabaseError (FATAL:  database "pic_em_development" does not exist
+Run `$ bin/rake db:create db:migrate` to create your database):
+  activerecord (4.1.7) lib/active_record/connection_adapters/postgresql_adapter.rb:898:in `rescue in connect'
+  activerecord (4.1.7) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.7) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.7) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.1.7) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.7) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.7) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.7) lib/active_record/migration.rb:388:in `check_pending!'
+  activerecord (4.1.7) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/alexschattner/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (49.3ms)
+  [1m[36m (25.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (3.4ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateAuthors (20141127014044)
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36m (9.3ms)[0m  [1mCREATE TABLE "authors" ("id" serial primary key, "username" character varying(255), "password_digest" character varying(255), "img_url" character varying(255), "bio" character varying(255), "location" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20141127014044"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Migrating to CreatePosts (20141127014106)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (41.7ms)[0m  [1mCREATE TABLE "posts" ("id" serial primary key, "img_url" character varying(255), "title" character varying(255), "words" character varying(255), "author_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20141127014106"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+Migrating to CreateTags (20141127014112)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (25.8ms)[0m  [1mCREATE TABLE "tags" ("id" serial primary key, "name" character varying(255)) [0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20141127014112"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Migrating to CreatePostsTags (20141127014153)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (1.9ms)[0m  [1mCREATE TABLE "posts_tags" ("post_id" integer NOT NULL, "tag_id" integer NOT NULL) [0m
+  [1m[35m (1.3ms)[0m  CREATE  INDEX  "index_posts_tags_on_post_id" ON "posts_tags"  ("post_id")
+  [1m[36m (1.0ms)[0m  [1mCREATE  INDEX  "index_posts_tags_on_tag_id" ON "posts_tags"  ("tag_id")[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20141127014153"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mPost Load (0.9ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mAuthor Load (0.7ms)[0m  [1mSELECT "authors".* FROM "authors"[0m
+  [1m[35mTag Load (0.6ms)[0m  SELECT "tags".* FROM "tags"
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mAuthor Exists (2.0ms)[0m  SELECT  1 AS one FROM "authors"  WHERE "authors"."username" = 'MonkeyButt' LIMIT 1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "authors" ("bio", "created_at", "img_url", "location", "password_digest", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["bio", "I like big butts..."], ["created_at", "2015-03-01 22:18:49.963564"], ["img_url", "http://www.curiousblend.com/monkey.jpg"], ["location", "Nashville, TN"], ["password_digest", "$2a$10$8TKsYRLBnzEYhkxWA7vWuOL9Vj3KuHHUlvZSzOrhg5TablOcUaO0m"], ["updated_at", "2015-03-01 22:18:49.963564"], ["username", "MonkeyButt"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mAuthor Exists (0.6ms)[0m  SELECT  1 AS one FROM "authors"  WHERE "authors"."username" = 'BillyBob' LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "authors" ("bio", "created_at", "img_url", "location", "password_digest", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["bio", "Howdy, Y'all"], ["created_at", "2015-03-01 22:18:50.057377"], ["img_url", "http://www.kboing.com.br/fotos/imagens/4f79f2197dc84.jpg"], ["location", "New York, NY"], ["password_digest", "$2a$10$F1qu9N51A1ua5tgyWUjct.VRZbalmU4c96llzNmC4W7J7i6H2ndNq"], ["updated_at", "2015-03-01 22:18:50.057377"], ["username", "BillyBob"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mAuthor Exists (0.4ms)[0m  SELECT  1 AS one FROM "authors"  WHERE "authors"."username" = 'GlamourT' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "authors" ("bio", "created_at", "img_url", "location", "password_digest", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["bio", "Everything has Beauty."], ["created_at", "2015-03-01 22:18:50.130503"], ["img_url", "http://lecitykitty.com/wp-content/uploads/2014/05/audrey-2.jpg"], ["location", "Los Angeles, CA"], ["password_digest", "$2a$10$MDQQ2ycB7iE2Cnkb0wWCZ.RYQ6l7o4OdWrWwqM4EAgl2pj7faDOLe"], ["updated_at", "2015-03-01 22:18:50.130503"], ["username", "GlamourT"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.7ms)[0m  ROLLBACK
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "tags" ("name") VALUES ($1) RETURNING "id"  [["name", "women"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "tags" ("name") VALUES ($1) RETURNING "id"[0m  [["name", "architecture"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "tags" ("name") VALUES ($1) RETURNING "id"  [["name", "beauty"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "posts" ("author_id", "created_at", "img_url", "title", "updated_at", "words") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["author_id", 1], ["created_at", "2015-03-01 22:18:50.293539"], ["img_url", "https://s-media-cache-ak0.pinimg.com/736x/79/98/b2/7998b2fb3df0920e55b8b02c6e1c0f6d.jpg"], ["title", "Pin-Up"], ["updated_at", "2015-03-01 22:18:50.293539"], ["words", "Elvgrin"]]
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "posts_tags" ("post_id", "tag_id") VALUES ($1, $2)  [["post_id", 1], ["tag_id", 1]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("author_id", "created_at", "img_url", "title", "updated_at", "words") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["author_id", 2], ["created_at", "2015-03-01 22:18:50.301988"], ["img_url", "https://s-media-cache-ak0.pinimg.com/236x/b7/3f/80/b73f806301204a9d2f40c7b17b2fa599.jpg"], ["title", "Old Penn Station"], ["updated_at", "2015-03-01 22:18:50.301988"], ["words", "Photograph"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts_tags" ("post_id", "tag_id") VALUES ($1, $2)  [["post_id", 2], ["tag_id", 2]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "posts" ("author_id", "created_at", "img_url", "title", "updated_at", "words") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["author_id", 3], ["created_at", "2015-03-01 22:18:50.306488"], ["img_url", "https://s-media-cache-ak0.pinimg.com/236x/9f/6d/dc/9f6ddc77d790fbed6d95899f59191824.jpg"], ["title", "Castle!"], ["updated_at", "2015-03-01 22:18:50.306488"], ["words", "Neuschwanstein"]]
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts_tags" ("post_id", "tag_id") VALUES ($1, $2)  [["post_id", 3], ["tag_id", 3]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-01 17:19:04 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 2116ms (Views: 2091.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2015-03-01 17:19:06 -0500
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-03-01 17:19:06 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-01 17:19:06 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-01 17:19:06 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-01 17:19:06 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-01 17:19:06 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-01 17:19:06 -0500
+
+
+Started POST "/sessions" for 127.0.0.1 at 2015-03-01 17:20:59 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PWLgj12a7fOyMenmCs3hGTGpaebGKLgqn/P0+jigwpY=", "username"=>"MonkeyButt", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[35mAuthor Load (1.7ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."username" = 'MonkeyButt' LIMIT 1
+Redirected to http://localhost:3000/authors
+Completed 302 Found in 127ms (ActiveRecord: 6.2ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2015-03-01 17:20:59 -0500
+Processing by AuthorsController#index as HTML
+  [1m[36mAuthor Load (0.7ms)[0m  [1mSELECT "authors".* FROM "authors"[0m
+  Rendered authors/index.html.erb within layouts/application (3.7ms)
+  [1m[35mAuthor Load (0.5ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 72ms (Views: 68.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2015-03-01 17:20:59 -0500
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-03-01 17:20:59 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-01 17:20:59 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-01 17:20:59 -0500
+
+
+Started DELETE "/sessions" for 127.0.0.1 at 2015-03-01 17:24:32 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"PWLgj12a7fOyMenmCs3hGTGpaebGKLgqn/P0+jigwpY="}
+Redirected to http://localhost:3000/authors
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2015-03-01 17:24:32 -0500
+Processing by AuthorsController#index as HTML
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT "authors".* FROM "authors"[0m
+  Rendered authors/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 39ms (Views: 38.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2015-03-01 17:24:32 -0500
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-03-01 17:24:32 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-01 17:24:32 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-01 17:24:32 -0500
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2015-03-01 17:24:49 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2015-03-01 17:24:56 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PWLgj12a7fOyMenmCs3hGTGpaebGKLgqn/P0+jigwpY=", "username"=>"MonkeyButt", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[35mAuthor Load (0.6ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."username" = 'MonkeyButt' LIMIT 1
+Redirected to http://localhost:3000/authors
+Completed 302 Found in 75ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2015-03-01 17:24:56 -0500
+Processing by AuthorsController#index as HTML
+  [1m[36mAuthor Load (0.5ms)[0m  [1mSELECT "authors".* FROM "authors"[0m
+  Rendered authors/index.html.erb within layouts/application (1.3ms)
+  [1m[35mAuthor Load (0.5ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 46ms (Views: 44.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2015-03-01 17:24:56 -0500
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-03-01 17:24:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-01 17:24:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-01 17:24:56 -0500
+
+
+Started DELETE "/sessions" for 127.0.0.1 at 2015-03-01 17:27:49 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"PWLgj12a7fOyMenmCs3hGTGpaebGKLgqn/P0+jigwpY="}
+Redirected to http://localhost:3000/authors
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2015-03-01 17:27:49 -0500
+Processing by AuthorsController#index as HTML
+  [1m[36mAuthor Load (0.5ms)[0m  [1mSELECT "authors".* FROM "authors"[0m
+  Rendered authors/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2015-03-01 17:27:49 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-01 17:27:49 -0500
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-03-01 17:27:49 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-01 17:27:49 -0500
+
+
+Started GET "/authors" for 127.0.0.1 at 2015-03-01 17:28:00 -0500
+Processing by AuthorsController#index as HTML
+  [1m[35mAuthor Load (0.5ms)[0m  SELECT "authors".* FROM "authors"
+  Rendered authors/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 44ms (Views: 43.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2015-03-01 17:28:00 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-01 17:28:00 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-01 17:28:00 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-01 17:28:00 -0500
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-03-01 17:28:00 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-01 17:28:00 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-01 17:28:00 -0500
+
+
+Started GET "/authors/1" for 127.0.0.1 at 2015-03-01 17:29:53 -0500
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAuthor Load (0.8ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  WHERE "posts"."author_id" = $1  [["author_id", 1]]
+  Rendered authors/show.html.erb within layouts/application (34.6ms)
+Completed 200 OK in 106ms (Views: 100.7ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2015-03-01 17:30:30 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mAuthor Load (0.9ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mTag Load (0.8ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 89ms (Views: 77.0ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2015-03-01 17:31:55 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (0.6ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mTag Load (0.7ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1  [["post_id", 3]]
+  Rendered posts/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 44ms (Views: 41.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2015-03-01 17:31:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-01 17:31:56 -0500
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-03-01 17:31:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-01 17:31:56 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-01 17:31:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-01 17:31:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-01 17:31:56 -0500
+
+
+Started GET "/authors/3" for 127.0.0.1 at 2015-03-01 17:32:01 -0500
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"  WHERE "posts"."author_id" = $1  [["author_id", 3]]
+  Rendered authors/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 41ms (Views: 38.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/authors/3/edit" for 127.0.0.1 at 2015-03-01 17:32:06 -0500
+Processing by AuthorsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mAuthor Load (0.5ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" IS NULL LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Completed 302 Found in 9ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2015-03-01 17:32:06 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 39ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-03-01 17:32:17 -0500
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.9ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mAuthor Load (0.6ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mTag Load (0.6ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mTag Load (0.6ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mTag Load (0.6ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 3]]
+  Rendered posts/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 60ms (Views: 55.3ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2015-03-01 17:32:18 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.7ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mTag Load (0.6ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1  [["post_id", 2]]
+  Rendered posts/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 46ms (Views: 43.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/authors/2/edit" for 127.0.0.1 at 2015-03-01 17:32:22 -0500
+Processing by AuthorsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAuthor Load (0.5ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" IS NULL LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Completed 302 Found in 3ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2015-03-01 17:32:22 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 39ms (Views: 38.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2015-03-01 17:32:30 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1bkj3I0naNA8TOqWI4p0IH4g3lF5gUHXr5Is/gHCJwY=", "username"=>"MonkeyButt", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mAuthor Load (0.5ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."username" = 'MonkeyButt' LIMIT 1[0m
+Redirected to http://localhost:3000/authors
+Completed 302 Found in 76ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2015-03-01 17:32:30 -0500
+Processing by AuthorsController#index as HTML
+  [1m[35mAuthor Load (0.5ms)[0m  SELECT "authors".* FROM "authors"
+  Rendered authors/index.html.erb within layouts/application (1.3ms)
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 42ms (Views: 40.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2015-03-01 17:32:30 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-01 17:32:30 -0500
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2015-03-01 17:32:30 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-01 17:32:30 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-01 17:32:30 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-01 17:32:30 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-01 17:32:30 -0500
+
+
+Started GET "/authors/1/edit" for 127.0.0.1 at 2015-03-01 17:32:36 -0500
+Processing by AuthorsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mAuthor Load (0.5ms)[0m  [1mSELECT  "authors".* FROM "authors"  WHERE "authors"."id" = 1 LIMIT 1[0m
+  Rendered authors/_form.html.erb (54.7ms)
+  Rendered authors/edit.html.erb within layouts/application (80.9ms)
+  [1m[35mAuthor Load (0.5ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 130ms (Views: 126.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2015-03-01 17:32:40 -0500
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mAuthor Load (0.3ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[35mAuthor Load (0.3ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 2]]
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = $1[0m  [["post_id", 3]]
+  Rendered posts/index.html.erb within layouts/application (8.5ms)
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 50ms (Views: 47.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2015-03-01 17:35:32 -0500
+Processing by AuthorsController#index as HTML
+  [1m[36mAuthor Load (0.5ms)[0m  [1mSELECT "authors".* FROM "authors"[0m
+  Rendered authors/index.html.erb within layouts/application (2.3ms)
+  [1m[35mAuthor Load (0.4ms)[0m  SELECT  "authors".* FROM "authors"  WHERE "authors"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 50ms (Views: 48.1ms | ActiveRecord: 0.9ms)
